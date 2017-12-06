@@ -1,3 +1,5 @@
+from collections import Counter
+
 with open("input.txt") as f:
 	data = f.read()
 
@@ -11,7 +13,7 @@ for l in range(linesLength):
 	words = lines[l].split(" ")
 	for i in range(len(words)):
 		for k in range(len(words)):
-			if i != k and words[i] == words[k]:
+			if i != k and Counter(words[i]) == Counter(words[k]):
 				isVaild = False
 
 	if isVaild:
