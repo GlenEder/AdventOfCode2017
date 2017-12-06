@@ -19,7 +19,7 @@ for i in range(input - 1):
 
 	step = step + 1
 
-	print(x, y, i)
+	#print(x, y, i)
 
 	if step == maxSteps:
 		if direction == 2:
